@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Harmony Music Company</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+scroll-behavior:smooth;
+}
+
+body{
+font-family:'Segoe UI',sans-serif;
+background:#0f172a;
+color:white;
+line-height:1.6;
+}
+
+/* HERO */
+
+header{
+height:100vh;
+background:
+linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.7)),
+url('https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?auto=format&fit=crop&w=1600&q=80');
+background-size:cover;
+background-position:center;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:20px;
+}
+
+header h1{
+font-size:4rem;
+color:#00e5ff;
+text-shadow:0 0 20px #00e5ff;
+}
+
+header p{
+margin-top:15px;
+font-size:1.2rem;
+color:#ddd;
+}
+
+.btn{
+margin-top:30px;
+padding:15px 35px;
+background:#00e5ff;
+color:black;
+text-decoration:none;
+border-radius:50px;
+font-weight:bold;
+transition:.4s;
+}
+
+.btn:hover{
+background:white;
+transform:scale(1.05);
+}
+
+/* NAVBAR */
+
+nav{
+position:sticky;
+top:0;
+background:rgba(0,0,0,.85);
+backdrop-filter:blur(10px);
+padding:18px;
+text-align:center;
+z-index:1000;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+margin:0 20px;
+font-size:18px;
+transition:.3s;
+}
+
+nav a:hover{
+color:#00e5ff;
+}
+
+/* SECTION */
+
+section{
+padding:80px 10%;
+}
+
+h2{
+text-align:center;
+margin-bottom:30px;
+color:#00e5ff;
+font-size:2.2rem;
+}
+
+/* CARD */
+
+.card{
+background:rgba(255,255,255,.08);
+backdrop-filter:blur(15px);
+border:1px solid rgba(255,255,255,.1);
+padding:30px;
+border-radius:20px;
+transition:.4s;
+}
+
+.card:hover{
+transform:translateY(-10px);
+box-shadow:0 15px 30px rgba(0,229,255,.3);
+}
+
+/* GRID */
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
+
+/* STATS */
+
+.stats h3{
+font-size:2.5rem;
+color:#00e5ff;
+}
+
+/* ARTIST BG */
+
+#artists{
+background:
+linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.7)),
+url('https://images.unsplash.com/photo-1511379938547-c1f69419868d?auto=format&fit=crop&w=1600&q=80');
+background-size:cover;
+background-position:center;
+background-attachment:fixed;
+}
+
+/* ALBUM BG */
+
+#albums{
+background:
+linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.7)),
+url('https://images.unsplash.com/photo-1494232410401-ad00d5433cfa?auto=format&fit=crop&w=1600&q=80');
+background-size:cover;
+background-position:center;
+background-attachment:fixed;
+}
+
+/* CONTACT */
+
+.contact{
+text-align:center;
+}
+
+input,textarea{
+width:100%;
+padding:15px;
+margin:10px 0;
+border:none;
+border-radius:10px;
+outline:none;
+}
+
+button{
+padding:15px 30px;
+border:none;
+background:#00e5ff;
+font-weight:bold;
+border-radius:50px;
+cursor:pointer;
+transition:.3s;
+}
+
+button:hover{
+background:white;
+}
+
+/* FOOTER */
+
+footer{
+background:#020617;
+text-align:center;
+padding:30px;
+color:#aaa;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:768px){
+
+header h1{
+font-size:2.5rem;
+}
+
+nav a{
+display:block;
+margin:10px 0;
+}
+
+section{
+padding:60px 5%;
+}
+
+}
+
+</style>
+</head>
+<body>
+
+<header>
+
+<h1>🎵 Harmony Music Company</h1>
+
+<p>Creating Sounds That Inspire The World</p>
+
+<a href="#albums" class="btn">
+Explore Music
+</a>
+
+</header>
+
+<nav>
+
+<a href="#about">About</a>
+
+<a href="#stats">Stats</a>
+
+<a href="#artists">Artists</a>
+
+<a href="#albums">Albums</a>
+
+<a href="#reviews">Reviews</a>
+
+<a href="#contact">Contact</a>
+
+</nav>
+
+<!-- ABOUT -->
+
+<section id="about">
+
+<div class="card">
+
+<h2>About Us</h2>
+
+<p>
+
+Harmony Music Company is dedicated to discovering talented artists, producing world-class music and delivering unforgettable experiences to audiences around the globe.
+
+</p>
+
+</div>
+
+</section>
+
+<!-- STATS -->
+
+<section id="stats">
+
+<h2>Our Achievements</h2>
+
+<div class="grid stats">
+
+<div class="card">
+<h3>50+</h3>
+<p>Songs Released</p>
+</div>
+
+<div class="card">
+<h3>10+</h3>
+<p>Artists</p>
+</div>
+
+<div class="card">
+<h3>1M+</h3>
+<p>Streams</p>
+</div>
+
+<div class="card">
+<h3>5+</h3>
+<p>Years Experience</p>
+</div>
+
+</div>
+
+</section>
+
+<!-- ARTISTS -->
+
+<section id="artists">
+
+<h2>Our Artists</h2>
+
+<div class="grid">
+
+<div class="card">
+<h3>🎤 Arjun Beats</h3>
+<p>EDM Producer</p>
+</div>
+
+<div class="card">
+<h3>🎶 Melody Queen</h3>
+<p>Pop Singer</p>
+</div>
+
+<div class="card">
+<h3>🥁 Rhythm Band</h3>
+<p>Rock Band</p>
+</div>
+
+<div class="card">
+<h3>🎸 Acoustic Soul</h3>
+<p>Acoustic Artist</p>
+</div>
+
+</div>
+
+</section>
+
+<!-- ALBUMS -->
+
+<section id="albums">
+
+<h2>Popular Albums</h2>
+
+<div class="grid">
+
+<div class="card">
+<h3>🌙 Dream Sounds</h3>
+<p>Released 2025</p>
+</div>
+
+<div class="card">
+<h3>✨ Night Vibes</h3>
+<p>Released 2024</p>
+</div>
+
+<div class="card">
+<h3>🎼 Musical Journey</h3>
+<p>Released 2023</p>
+</div>
+
+<div class="card">
+<h3>🔥 Golden Beats</h3>
+<p>Released 2022</p>
+</div>
+
+</div>
+
+</section>
+
+<!-- REVIEWS -->
+
+<section id="reviews">
+
+<h2>What People Say</h2>
+
+<div class="grid">
+
+<div class="card">
+
+<p>
+
+"Amazing music quality and talented artists."
+
+</p>
+
+<br>
+
+<h4>- Rahul Sharma</h4>
+
+</div>
+
+<div class="card">
+
+<p>
+
+"One of the best independent music companies."
+
+</p>
+
+<br>
+
+<h4>- Priya Patel</h4>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- CONTACT -->
+
+<section id="contact">
+
+<div class="card contact">
+
+<h2>Contact Us</h2>
+
+<form>
+
+<input type="text" placeholder="Your Name">
+
+<input type="email" placeholder="Your Email">
+
+<textarea rows="5" placeholder="Your Message"></textarea>
+
+<button>
+
+Send Message
+
+</button>
+
+</form>
+
+<br>
+
+<p>📧 info@harmonymusic.com</p>
+
+<p>📞 +91 9876543210</p>
+
+<p>📍 Mumbai, India</p>
+
+</div>
+
+</section>
+
+<!-- FOOTER -->
+
+<footer>
+
+<h3>Harmony Music Company</h3>
+
+<br>
+
+<p>
+
+Instagram • YouTube • Spotify • Facebook
+
+</p>
+
+<br>
+
+<p>
+
+© 2026 Harmony Music Company. All Rights Reserved.
+
+</p>
+
+</footer>
+
+</body>
+</html>
